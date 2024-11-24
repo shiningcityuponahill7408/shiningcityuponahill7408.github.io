@@ -49,70 +49,50 @@
                   </a>
                 </td>
               </tr>
-              <p>
-                  주요 연구분야: 컴퓨터비전; 행동인식, 3D reconstruction
-                </p>
+              <p style="text-align:center; margin-top:10px;">
+                주요 연구분야: 컴퓨터비전; 행동인식, 3D reconstruction
+              </p>
             </tbody>
           </table>
 
           <!-- Papers Section -->
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
-  <tbody>
-    <tr>
-      <td style="padding:20px;width:100%;vertical-align:middle;">
-        <h2 style="text-align:left;">Papers</h2>
-      </td>
-    </tr>
-    <!-- Paper 1 -->
-    <tr onmouseout="robotsee_stop()" onmouseover="robotsee_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id="robotsee_under">
-            <video width="115%" height="100%" muted autoplay loop>
-              <source src="images/robotsee_under.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <video width="115%" height="100%" muted autoplay loop id="robotsee_splash">
-            <source src="images/robotsee_splash.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <!-- SCRIPT FOR HOVERING -->
-        <script type="text/javascript">
-          function robotsee_start() {
-            document.getElementById('robotsee_splash').style.opacity = "0";
-            document.getElementById('robotsee_under').style.opacity = "1";
-          }
-          function robotsee_stop() {
-            document.getElementById('robotsee_splash').style.opacity = "1";
-            document.getElementById('robotsee_under').style.opacity = "0";
-          }
-          robotsee_stop();
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <!-- TITLE -->
-        <a href="https://robot-see-robot-do.github.io/">
-          <papertitle>ELLAR: An Action Recognition Dataset for Extremely Low-Light Conditions with Dual Gamma Adaptive Modulation
-</papertitle>
-        </a>
-        <br>
-        <!-- AUTHORS -->
-        <b>Minse Ha</b>*, Wan-Gi Bae*, Guenyoung Bae, <b>Jong Taek Lee</b>†
-        <br>
-        *Equal contribution
-        <br>
-        <!-- CONFERENCE -->
-        <em>ACCV</em> 2024
-        <!-- LINKS -->
-        <br>
-        <a href="https://nonono.com/">Website</a>
-        <p></p>
-        <!-- SUMMARY -->
-        Introducing a dataset called ELLAR with more than 12k+ videos and propose a method for tackling action recognition under extremely low-light conditions.
-      </td>
-    </tr>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle;">
+                  <h2 style="text-align:left;">Papers</h2>
+                </td>
+              </tr>
+              <!-- Paper 1 -->
+              <tr>
+                <td style="padding:20px;width:25%;vertical-align:middle;">
+                  <video style="width:100%;max-width:200px;" muted autoplay loop>
+                    <source src="images/robotsee_under.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </td>
+                <td style="padding:20px;width:75%;vertical-align:middle;">
+                  <!-- TITLE -->
+                  <a href="https://nonono.com/" style="font-weight:bold;font-size:18px;text-decoration:none;color:#007bff;">
+                    ELLAR: An Action Recognition Dataset for Extremely Low-Light Conditions with Dual Gamma Adaptive Modulation
+                  </a>
+                  <br>
+                  <!-- AUTHORS -->
+                  Minse Ha*, Wan-Gi Bae*, Guenyoung Bae, Jong Taek Lee†
+                  <br>
+                  *Equal contribution
+                  †Corresponding Author
+                  <br>
+                  <!-- CONFERENCE -->
+                  <em>ACCV</em> 2024
+                  <!-- LINKS -->
+                  <br>
+                  <a href="https://nonono.com/" style="text-decoration:none;color:#007bff;">Website</a>
+                  <p style="margin-top:5px;font-size:14px;">
+                    Introducing a dataset called ELLAR with more than 12k+ videos and propose a method for tackling action recognition under extremely low-light conditions.
+                  </p>
+                </td>
+              </tr>
             </tbody>
           </table>
         </td>
