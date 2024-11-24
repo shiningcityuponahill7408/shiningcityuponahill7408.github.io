@@ -81,10 +81,18 @@
               <tr>
                 <!-- Video Section -->
                 <td style="padding:20px;width:30%;vertical-align:middle;text-align:center;">
-                  <video style="width:100%;max-width:200px;" muted autoplay loop id="lerf_splash>
-                    <source src="images/qwerty.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
+                  <div class="one">
+                    <div class="two" id="lerf_under" style="opacity:0;">
+                      <video style="width:100%;max-width:200px;" muted autoplay loop>
+                        <source src="images/qwerty.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <video style="width:100%;max-width:200px;" muted autoplay loop id="lerf_splash">
+                      <source src="images/qwerty.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
                 </td>
                 <!-- Text Section -->
                 <td style="padding:20px;width:70%;vertical-align:middle;">
@@ -116,5 +124,19 @@
       </tr>
     </tbody>
   </table>
+
+  <!-- Script Section -->
+  <script type="text/javascript">
+    function lerf_start() {
+      document.getElementById('lerf_splash').style.opacity = "0";
+      document.getElementById('lerf_under').style.opacity = "1";
+    }
+
+    function lerf_stop() {
+      document.getElementById('lerf_splash').style.opacity = "1";
+      document.getElementById('lerf_under').style.opacity = "0";
+    }
+    lerf_stop();
+  </script>
 </body>
 </html>
